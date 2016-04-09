@@ -52,7 +52,6 @@ describe "Creating todo lists" do
 
     create_todo_list description: ""
 
-
     expect(page).to have_content("error")
     expect(TodoList.count).to eq(0)
 
